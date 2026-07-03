@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "DiasLog Lote Helper",
+  "version": "1.0",
+  "description": "Automatiza a inserção de lotes e gerencia janelas no sistema DiasLog.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "windows"
+  ],
+  "host_permissions": [
+    "*://sistema.diaslog.com.br/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Abrir Injetor DiasLog",
+    "default_popup": "sidepanel.html"
+  }
+}
